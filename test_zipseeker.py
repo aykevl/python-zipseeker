@@ -7,8 +7,6 @@ import io
 import unittest
 import random
 
-PY2 = sys.version_info[0] <= 2
-
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from zipseeker import ZipSeeker
 
@@ -20,10 +18,7 @@ class Test(unittest.TestCase):
 
         fp = ZipSeeker()
         fp.add('testfiles/test.txt', 'test.txt')
-        if PY2:
-            fp.add('testfiles/test-µ.txt', u'test-µ.txt')
-        else: # PY3
-            fp.add('testfiles/test-µ.txt', 'test-µ.txt')
+        fp.add('testfiles/test-µ.txt', u'test-µ.txt')
 
         # calculate the size beforehand
         size = fp.size()
