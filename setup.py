@@ -3,9 +3,7 @@
 from distutils.core import setup
 import os
 
-ROOT = os.path.dirname(__file__)
-if not ROOT:
-    ROOT = '.'
+ROOT = os.path.abspath(os.path.dirname(__file__))
 
 VERSION='1.0.9'
 
