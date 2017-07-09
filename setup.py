@@ -5,7 +5,7 @@ import os
 
 ROOT = os.path.abspath(os.path.dirname(__file__))
 
-VERSION='1.0.9'
+VERSION='1.0.10'
 
 setup(name='zipseeker',
       packages=['zipseeker'],
