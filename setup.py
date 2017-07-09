@@ -16,7 +16,7 @@ setup(name='zipseeker',
       long_description=open(ROOT + '/README.rst').read(),
       author='Ayke van Laethem',
       author_email='aykevanlaethem@gmail.com',
-      url='https://github.com/aykevl/zipseeker',
+      url='https://github.com/aykevl/python-zipseeker',
       keywords=['zip', 'http', 'streaming'],
       download_url='https://github.com/aykevl/python-zipseeker/archive/v%s.zip' % VERSION,
      )
